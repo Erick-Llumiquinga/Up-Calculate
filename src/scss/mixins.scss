@@ -1,0 +1,24 @@
+@mixin textBody {
+	font-family: 'Solway', serif;
+	font-size: 22px;
+	color: #ffffff;
+	font-weight: 100;
+}
+
+@mixin bgCovertint ($imgurl, $background-top:"center", $background-left:"center", $background-attachment:"fixed") {
+	background: url($imgurl) no-repeat unquote($background-top) unquote($background-left) unquote($background-attachment); 
+	background: url($imgurl) no-repeat unquote($background-top) unquote($background-left) unquote($background-attachment); 
+	background: url($imgurl) no-repeat unquote($background-top) unquote($background-left) unquote($background-attachment); 
+	background: url($imgurl) no-repeat unquote($background-top) unquote($background-left) unquote($background-attachment); 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;  
+}
+
+@mixin horizontalCenter{
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+    
+}

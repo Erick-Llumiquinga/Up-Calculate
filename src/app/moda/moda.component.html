@@ -1,0 +1,26 @@
+<ion-header>
+  <h1>Moda</h1>
+</ion-header>
+<div class="form">
+  <div class="text">
+      <ion-label>Ingrese los datos</ion-label>
+      <br>
+      <span>Minimo 20 datos</span>
+  </div>
+  <ion-item>
+    <ion-input  placeholder="Ejm: 156" [(ngModel)]="datos" name="datos" required></ion-input>
+  </ion-item>
+
+  <ion-button shape="round"  color="dark" (click)="calcular()">Calcular</ion-button>
+  <ion-button shape="round"  color="success" (click)="abrirModal()">Ver Gráfica</ion-button>
+  <ion-button shape="round"  color="danger" (click)="limpiar()">Limpiar</ion-button>
+  <ion-label>Datos a calcular</ion-label>
+  <ion-list style="background-color: transparent;" class="datos">
+    <ion-label *ngFor="let datos of arrayDatos">{{datos}} - </ion-label>
+  </ion-list>
+  
+  <ion-card class="card">
+    <ion-label>Resultado: {{total}}</ion-label>
+  </ion-card>
+ 
+</div>
